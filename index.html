@@ -14,6 +14,11 @@
         body {
             background-color: black;
             font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .main-div {
+            width: 100%;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -23,6 +28,7 @@
         .container {
             background-color: black;
             max-width: 450px;
+            /* min-width: 450px; */
             min-height: 600px;
             display: flex;
             justify-content: center;
@@ -66,10 +72,9 @@
         /* .card-additional-info-text {
             display: flex;
             flex-direction: column;
-            /* gap: 10px; */
-        }
+        } */
 
-        */ .card-additional-info-text h2 {
+        .card-additional-info-text h2 {
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
             font-size: 44px;
             line-height: 46px;
@@ -127,6 +132,7 @@
             border-radius: 16px;
             margin: 20px;
             max-width: 450px;
+            /* min-width: 450px; */
             padding: 20px;
         }
 
@@ -142,8 +148,10 @@
             background-color: white;
             border-radius: 16px;
             margin: 20px;
-            min-width: 450px;
+            max-width: 450px;
+            /* min-width: 449px; */
             padding: 20px;
+            width: 90%;
         }
 
         .card-linkedin-link {
@@ -151,13 +159,28 @@
             align-items: center;
             gap: 20px;
             text-decoration: none;
+            flex-direction: row;
+            width: 100%;
             /* justify-content: space-evenly; */
+        }
+
+        .card-linkedin-icon-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
         }
 
         .card-linkedin-text {
             font-size: 20px;
             color: #333333;
             width: calc(100% - 95px);
+        }
+
+        .card-linkedin-arrow {
+            align-items: flex-end;
+
         }
 
         .fa-linkedin {
@@ -172,46 +195,52 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card-main">
-            <div class="card-profile-photo">
-            </div>
-            <div class="card-additional-info">
-                <div class="card-additional-info-text">
-                    <h2>Chakravarthi Ummadisetti</h2>
-                    <p>Manager Consulting Expert</p>
-                    <!-- <p><strong>CGI</strong></p> -->
-                    <img src="./CGILogo.svg" style="max-width: 160px; max-height: 60px;" />
+    <div class="main-div">
+        <div class="container">
+            <div class="card-main">
+                <div class="card-profile-photo">
                 </div>
-                <div class="card-contact-info">
-                    <div class="icon-circle">
-                        <a href="tel:+91-9513216780" class="fa-mobile-alt fas">
-                        </a>
+                <div class="card-additional-info">
+                    <div class="card-additional-info-text">
+                        <h2>Chakravarthi Ummadisetti</h2>
+                        <p>Manager Consulting Expert</p>
+                        <!-- <p><strong>CGI</strong></p> -->
+                        <img src="./CGILogo.svg" style="max-width: 160px; max-height: 60px;" />
                     </div>
-                    <div class="icon-circle">
-                        <a href="mailto:chakravarthi.ummadietti@cgi.com" class="fa-regular fa-envelope">
-                        </a>
+                    <div class="card-contact-info">
+                        <div class="icon-circle">
+                            <a href="tel:+91-9513216780" class="fa-mobile-alt fas">
+                            </a>
+                        </div>
+                        <div class="icon-circle">
+                            <a href="mailto:chakravarthi.ummadietti@cgi.com" class="fa-regular fa-envelope">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-work-info">
-        <p>Working as Manager Consulting Expert in CGI for last 15+ Years. Have been Supporting, Managing and Guiding
-            Team in
-            Customer facing client application.</p>
-    </div>
+        <div class="card-work-info">
+            <p>Working as Manager Consulting Expert in CGI for last 15+ Years. Have been Supporting, Managing and
+                Guiding
+                Team in
+                Customer facing client application.</p>
+        </div>
 
-    <div class="card-linkedin">
-        <a href="https://www.linkedin.com/in/chakravarthi-u-a183ab16b/" class="card-linkedin-link">
-            <i class="fa-brands fa-linkedin"></i>
-            <div class="card-linkedin-text">
-                LinkedIn
-            </div>
-            <div class="card-linkedin-arrow">
-                <i class="fa-solid fa-greater-than"></i>
-            </div>
-        </a>
+        <div class="card-linkedin">
+            <a href="https://www.linkedin.com/in/chakravarthi-u-a183ab16b/" class="card-linkedin-link">
+                <div class="card-linkedin-icon-text">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div class="card-linkedin-text">
+                        LinkedIn
+                    </div>
+                </div>
+                <div class="card-linkedin-arrow">
+                    <!-- <div class="card-linkedin-arrow"> -->
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 
