@@ -1,1 +1,73 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card Generator</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 450px;
+            min-height: 464px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            position: relative;
+        }
+
+        .card-main {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%), url('./Chakravarthi.U_Trimmed.JPG');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .card-additional-info {
+            position: absolute;
+            top: 50%;
+            left: 4%;
+            color: white;
+            /* Adjust text color as needed */
+            font-size: 2vw;
+            /* Adjust font size as needed */
+            text-align: left;
+            z-index: 1;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            /* Ensure text is above the gradient */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-main">
+        </div>
+        <div class="card-additional-info">
+            <div class="card-text">
+                <h2>Chakravarthi Ummadisetti</h2>
+                <h6>Manager Consulting Expert</h6>
+                <h4><strong>CGI</strong></h4>
+                <img src="./CGILogo.svg" style="max-width: 160px; max-height: 60px;" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
